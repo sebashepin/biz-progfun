@@ -3,9 +3,9 @@ Solutions to SICP exercises on functional programming
 
 For order's sake, lets store solutions grouped by book section instead of by commiter.
 
-*Last session:* 1.1. The Elements of Programming - All exercises
+*Last session: 1.2.1 Linear Recursion and Iteration - Exercises 1.9 and 1.10*
 
-**Current session: 1.2.1 Linear Recursion and Iteration - Exercises 1.9 and 1.10**
+**Current session: 1.2.2 - 1.2.3 Tree recursion & Orders of Growth - Exercises 1.11 and 1.12 (.13 - .15 Optional)**
 
 ## Resources
 
