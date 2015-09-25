@@ -34,7 +34,7 @@
 
 ; (A 2 4)
 ; (A 1 (A 2 3))
-; (A 1 (A 1 A(2 2))) THIS IS INSANITY
+; (A 1 (A 1 (A 2 2))) THIS IS INSANITY
 ; (A 1 (A 1 (A 1 (A 2 1))))
 ; (A 1 (A 1 (A 1 2)))
 ; (A 1 (A 1 (A 0 (A 1 1))))
