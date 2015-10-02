@@ -53,3 +53,43 @@
 
 (count-change 100)
 ;292
+
+;;;;;;;;;;;;;;;;
+;;; Exercise 1.11
+
+(define (f n)
+     (define (sum a b c) (+ a (* 2 b) (* 3 c)))
+     (define (iterf a b c n)
+          (cond ((< n 3) (sum a b c))
+                (else (iterf (sum a b c) a b (- n 1)))))
+     (cond ((< n 3) n)
+           (else (iterf 2 1 0 (- n 1)))))
+
+
+(f 1)
+(f 2)
+(f 3)
+(f 4)
+(f 5)
+(f 6)
+
+;;;;;;;;;;;;;;;;
+;;; Exercise 1.12 Pascal (modified)
+;;; 1
+;;; 1 1
+;;; 1 2 1
+;;; 1 3 3 1
+;;; 1 4 6 4 1
+
+(define (pascal x y)
+  (cond ((= x 0) 1)
+        ((and (= y 0) (= x 0) 1))
+        (else (pascal (dec x)(dec y) )
+              (pascal x (dec y)))))
+
+(pascal 0 0)
+(pascal 0 1)
+(pascal 1 2)
+(pascal 2 3)
+(pascal 3 4)
+
